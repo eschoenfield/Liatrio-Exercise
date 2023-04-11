@@ -2,7 +2,7 @@ import express from 'express'
 import os from 'os'
 
 const app = express()
-const PORT = 3000
+const PORT = 80
 
 app.get("/", (req, res) => {
     const intro = 'My name is Ely Schoenfield'
