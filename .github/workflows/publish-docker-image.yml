@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ master ]
     
-  #workflow_dispatch: # adds ability to manually run workflow 
+  workflow_dispatch: # adds ability to manually run workflow 
 
 jobs:
   build:
