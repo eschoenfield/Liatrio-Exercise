@@ -4,7 +4,7 @@ WORKDIR /app
 
 EXPOSE 80
 
-COPY package.json package-lock.json ./
+COPY node/package.json node/package-lock.json ./
 
 RUN npm install
 
