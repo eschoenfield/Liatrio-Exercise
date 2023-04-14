@@ -14,21 +14,13 @@ jobs:
     - name: node.js setup
       uses: actions/setup-node@v2
       with: 
-        node-version: '18.15.0'
-
-    - name: Install npm
-      run: npm install
+        node-version: '18.x'
 
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
 
-    - name: Run Docker container with -d flag -p 80
+    - name: Run Docker container
       run: docker run -d -p 80:80 my-image-name:$(date +%s)
 
     - name: run tests
       uses: liatrio/github-actions/apprentice-action@master
-      with: 
-        environment: "localhost"
-        port: "80"
-        command: "npm start"
-        wait-for-url: "http://localhost:80/"
