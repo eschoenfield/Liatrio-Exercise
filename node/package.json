@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/eschoenfield/Liatrio-Exercise/issues"
   },
-  "homepage": "https://github.com/eschoenfield/Liatrio-Exercise#readme",
-  "devDependencies": {
-    "liatrio/github-actions": "https://github.com/liatrio/github-actions/blob/master/apprentice-action/index.js"
-  }
+  "homepage": "https://github.com/eschoenfield/Liatrio-Exercise#readme"
 }
