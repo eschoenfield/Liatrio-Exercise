@@ -10,5 +10,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - name: node.js setup
+      uses: actions/setup-node@v2
+      with: 
+        node-version: '14.x'
+        
     - name: run tests
       uses: liatrio/github-actions/apprentice-action@master
+      with: 
+        environment: "localhost"
+        port: "80"
+        command: "npm start"
+        wait-for-url: "http://localhost:80/"
