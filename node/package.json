@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/eschoenfield/Liatrio-Exercise#readme",
   "devDependencies": {
-    "liatrio/github-actions": "^1.0.0"
+    "liatrio/github-actions": "https://github.com/liatrio/github-actions/blob/master/apprentice-action/index.js"
   }
 }
