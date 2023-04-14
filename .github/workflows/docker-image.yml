@@ -17,10 +17,10 @@ jobs:
         node-version: '18.x'
 
     - name: Build the Docker image
-      run: docker build . --file Dockerfile -t imageName
+      run: docker build . --file Dockerfile -t imagename
 
     - name: Run Docker container
-      run: docker run -d -p 80 imageName
+      run: docker run -d -p 80 imagename
 
     - name: run tests
       uses: liatrio/github-actions/apprentice-action@master
