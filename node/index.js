@@ -8,8 +8,8 @@ const info = {
 }
 
 app.get('/', (req, res) => {
-  res.sendStatus(200);  
-  res.json(info)
+  res.json(info);
+  res.sendStatus(200);
 });
 
 app.listen(port, () => {
