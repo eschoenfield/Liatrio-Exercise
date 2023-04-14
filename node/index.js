@@ -11,3 +11,7 @@ app.get('/', (req, res) => {
   res.json(info);
   res.sendStatus(200);
 });
+
+app.listen(port, () => {
+
+});
