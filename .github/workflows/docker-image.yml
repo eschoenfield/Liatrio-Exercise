@@ -20,7 +20,7 @@ jobs:
       run: docker build . --file Dockerfile -t imagename
 
     - name: Run Docker container
-      run: docker run -d -p 80 imagename
+      run: docker run -d -p 80:80 imagename
 
     - name: run tests
       uses: liatrio/github-actions/apprentice-action@master
